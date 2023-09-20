@@ -1,0 +1,215 @@
+   /* Generic Variables */
+   @font-face {
+    font-family: 'Pixel Millennium';
+    src: url('../media\font\Pixel Millennium.ttf') format('truetype'),
+      url('../media\font\Pixel Millennium.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root {
+    --blue-font: #8F8FDD
+  }
+
+  /*Navigation menu classes*/
+  .menu-overlay {
+    position: fixed;
+  }
+
+  .menu-button {
+    position: fixed;
+    z-index: 2;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .right-scroll-button {
+    right: 2vw;
+    opacity: 0;
+    transition: opacity 1.0s ease-in 2.0s;
+  }
+  .right-scroll-button:hover {
+    filter: brightness(1.5);
+  }
+  .left-scroll-button {
+    opacity: 0;
+    left: 2vw;
+    transition: opacity 1.0s ease-in 2.0s;
+  }
+  .left-scroll-button:hover {
+    filter: brightness(1.5);
+  }
+  .right-scroll-button.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s none 0s;
+  }
+  .left-scroll-button.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s none 0s;
+  }
+  .navigation-button {
+    left: 50vw;
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: transform 1.0s ease-in-out;
+  }
+  .navigation-button:hover {
+    filter: brightness(1.5);
+  }
+
+  
+
+
+  /* Audio menu */
+  .audio-title-scroll {
+    animation: 5s linear 0s infinite audio-title-scroll;
+  }
+  @keyframes audio-title-scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    80% {
+      transform: translate3d(-70%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-70%, 0, 0);
+    }
+  }
+  .audio-controls.show {
+    opacity: 1;
+  }
+  .audio-controls button:hover {
+    filter: brightness(1.5);
+  }
+  .audio-controls {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Pixel Millennium', sans-serif;
+    cursor: default;
+    transition: opacity 1.0s ease-in;
+    opacity: 0;
+  }
+  .audio-controls img {
+    object-fit: fill;
+    position: fixed;
+  }
+  .audio-controls button {
+    background-color: rgba(140, 140, 240, 0.344);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .audio-artist {
+    z-index: 2;
+  }
+  .audio-title-wrapper {
+    overflow: hidden;
+    z-index: 2;
+  }
+  .audio-title {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+  }
+  .audio-title p {
+    display: inline-block;
+    margin: 0;
+  }
+
+
+/* DESKTOP AND SIDEWAYS PHONE */
+@media screen and (min-width: 600px) {
+  /* Position override for desktop */
+  .navigation-button {
+    transform: translate3d(-50%, 100%, 0);
+  }
+
+  .menu-button img {
+    max-width: 10vw;
+    max-height: 5vh;
+    width: auto;
+    height: auto;
+  }
+
+  .navigation-button {
+    left: 50vw;
+    bottom: 0;
+    transform: translate3d(-50%, 100%, 0);
+    z-index: 4;
+    opacity: 0;
+    transition: transform 1.0s ease-in-out;
+  }
+
+  .navigation-button img {
+    min-width: 10vw;
+    min-height: 10vh;
+    object-fit: contain;
+  }
+
+  .menu-button{
+    top: 89vh;
+  }
+
+  /* AUDIO MENU */
+  /* Size overrides for desktop*/
+  .audio-controls {
+    left: 55vw;
+    top: 89vh;
+    max-width: 20vw;
+    min-width: 20vw;
+    height: 6vh;
+    font-size: 1.4vw;
+    padding-right: 2vw;
+    }
+  .audio-controls img {
+    max-height: 7%;
+    min-width: 35%;
+    min-height: 5%;
+  }
+  .audio-controls button {
+    font-size: 1vw;
+    margin-left: 10px;
+    transform: translate3d(0, -10%, 0);
+    min-width: 2vw;
+    height: 4vh;
+    z-index: 2;
+    padding-left: 2%;
+  }
+  .audio-artist {
+    min-width: 30%;
+    padding-left: 4%;
+    width: 50%;
+    font-size:80%;
+  }
+  .audio-artist p {
+    margin: 0;
+    width: 50%;
+  }
+  .audio-title-wrapper {
+    min-width: 40%;
+  }
+  .audio-title {
+    width: 80%;
+  }
+  .navigation-button.show {
+    opacity: 1;
+    transform: translate3d(-50%, 0%, 0);
+  }
+}
+
+.audio-controls button.active{
+  filter:brightness(0.7);
+  color:rgb(109, 109, 155);
+  box-shadow: 1px 1px #b8a9eb;
+}

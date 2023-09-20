@@ -1,0 +1,129 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retro-Play</title>
+    <link rel="icon" type="image/x-icon" href="media\menu\favicon.png">
+    
+    <link rel="stylesheet" href="media\font\Comfortaa-Regular.ttf">
+    <link rel="stylesheet" href="media\font\Comfortaa-Bold.ttf" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/tv.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="stylesheet" href="css/mobile_interface.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">
+    <link href="https://fonts.cdnfonts.com/css/pixel-millennium" rel="stylesheet">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width,  initial-scale=0.8, user-scalable=0"/>
+  <div class="scroll-container">
+    <!-- PAGE 2 (MENU) -->
+    <div class="page-container content">
+        <div class="menu-container" id="menu-container1">
+            <svg id="menu-line" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="var(--yellow-font)" id="path1" stroke-width="3"  fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <path stroke="var(--blue-font)" id="path2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <path stroke="var(--red-font)" id="path3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h1 class="menu-title">Why do video games backtrack?</h1>
+        
+            <div class="menu-row centred">
+                <div class="menu-column start">
+                    <div class="menu-button-container" onclick="window.location.href='en_0_intro.html'">
+                        <img class="menu-button-container-img" src="media\menu\tv-01.png" id="img1" />
+                        <h1>Introduction</h1>
+                    </div>
+                </div>
+                <div class="menu-column start">
+                    <div class="menu-button-container">
+                            <img class="menu-button-container-img" src="media\menu\tv-01.png" id="img2" onclick="window.location.href='en_1_sauvegarder.html'"/>
+                            <h1 style="color:var(--yellow-font)">Saving the game</h1>
+                    </div>
+                    <div class="menu-button-container">
+                        <img  class="menu-button-container-img" src="media\menu\tv-01.png" id="img3" onclick="window.location.href='en_2_construire.html'"/>
+                        <h1 style="color:var(--blue-font)">Building worlds</h1>
+                    </div>
+                    <div class="menu-button-container">
+                        <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" id="img4" onclick="window.location.href='en_3_rapprocher.html'"/>
+                        <h1 style="color:var(--red-font)">Getting closer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <!-- PAGE 1 (HARLEQUIN LOOKING BACK)-->
+    <div class="page-container content mobile-tv-container" style="display:flex; justify-content: center; padding-left:0; padding-right:0">
+      <div class="tv-background">
+          <input type="checkbox" id="switch">
+          <div class="container">
+              <iframe src="home_menu_tv.html"  class="screen" width="800" height="600"></iframe>
+              <div class="overlay">RL-23</div>
+          </div>
+          <label for="switch" class="switch-label"><i class="fa fa-volume-up"></i></label> 
+      </div>
+    </div>
+
+    <!-- TITLE PAGE -->
+    <div class="title-page">
+        <div class="content-container">
+            <div class="logo-container mobile-hidden " style="max-height:10vh;padding-bottom:10vh; ">
+                <img class="logo" src="media\logo\Logo_UdeM-blanc-CMJN.png">
+                <img class="logo" src="media\logo\grafim-logo blanc.png">
+                <img class="logo" style="height:4vh" src="media\logo\Obsolescence.png">
+                <img class="logo" style="height:4vh" src="media\logo\LUDOV.png">
+                <img class="logo logo-wide" src="media\logo\sshrc-fip-full-reverse-eng.png">
+            </div>
+            <div class="logo-container dt-hidden mobile-order-2" style="max-height:10vh;padding-bottom:10vh; ">
+                <div class="logo-container-row">
+                    <img class="logo" style="width:50%" src="media\logo\Logo_UdeM-blanc-CMJN.png">
+                    <img class="logo" style="width:50%" src="media\logo\grafim-logo blanc.png">
+                </div>
+                <div class="logo-container-row">
+                    <img class="logo" style="width:30%;" src="media\logo\Obsolescence.png">
+                    <img class="logo" style="width:30%;" src="media\logo\LUDOV.png">
+                </div>
+                <div class="logo-container-row">
+                    <img class="logo logo-wide" src="media\logo\sshrc-fip-full-reverse-eng.png">
+                </div>
+            </div>
+            <div class="content-container-vert mobile-order-1" style="height:50vh;padding-bottom:10vh;">
+                <div class="content-container-hor mobile-order-2" style="flex-direction:column; justify-items: start;padding-left:2vw;">
+                    <p class="content-text credits" id="credits1" style="width:100%">Design and text: Carl Therrien<br/>with the participation of Samy Bennamar, Nicolas Gilbert,<br/> André Habib, Francis Lavigne, Alice Michaud-Lapointe,<br/> Suzanne Paquet and Laurie-Mei Ross Dionne 
+                    </p>
+                    <p class="content-text credits" style="width:100%">Musical direction: Dominic Arsenault<br/>Programming: Nicolas Gilbert<br/>Graphic design: Laurie-Mei Ross Dionne and Carl<br/>Therrien, inspired by elements from the game<br/>Harlequin, © Ed Campbell & Gremlin Graphics
+                    </p>
+                    <p class="content-text credits" style="width:100%">Photography: Jonathan Lavoie, assisted by Hiba Chaari<br/>Video editing: Samy Bennamar<br/>Photo editing: Jonathan Lavoie and Carl Therrien<br/>Translation: Timothy Barnard and Carl Therrien
+                    </p>
+                    <p class="content-text credits" style="width:100%">In-browser game emulation courtesy<br/>of The Internet Archive<br/>CRT simulator courtesy of Kyle Pittman<br/>This exhibition is hosted by the UdeM library.
+                    </p>
+                </div>
+                <div class="content-container-hor dt-padding-right-4 mobile-order-1" >
+                    <h1 class="credits" id="title">Retro-Play<br/>The side-crolling virtual exhibition</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- NAVIGATION OVERLAY -->
+    <div class="menu-overlay">
+        <button id="navigation-button" class="menu-button navigation-button" onclick="showControls()"><img src="media\menu\audio_button_tv.png"/></button>
+        <div id="audio-controls" class="menu-button audio-controls">
+            <img src="media\menu\audio_button.png">
+              <span class="audio-artist"><p id="audio-artist-text">Artist</p></span>
+              <span id="audio-title-wrapper" class="audio-title-wrapper"><span class="audio-title"><p id="audio-title-text">Title</p></span></span>
+              <button id="audio-button-next"><i class="fa fa-forward"></i></button>
+              <button id="audio-button-mute"><i class="fa fa-pause"></i></button>
+              <button id="audio-button-start"><i class="fa fa-play"></i></button>
+              <audio id="audio"><source id="audio-source" src=""></audio>
+          </div>
+    </div>
+  <script src="js/audio.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/home-menu.js"></script>
+  <script src="js/scroll.js"></script>
+  <script>snapToPage();</script>
+</body>

@@ -1,0 +1,519 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retro-Play</title>
+    <link rel="icon" type="image/x-icon" href="media\menu\favicon.png">
+    
+    <link rel="stylesheet" href="media\font\Comfortaa-Regular.ttf">
+    <link rel="stylesheet" href="media\font\Comfortaa-Bold.ttf" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="stylesheet" href="css/mobile_interface.css">
+    <link href="https://fonts.cdnfonts.com/css/pixel-millennium" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width,  initial-scale=0.8, user-scalable=0"/>
+    <div id="page-loader-indicator"></div>
+    <div id="page-loader-background"></div>
+
+    <div class="scroll-container">
+        <!-- SECTION SELECTION MENU -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13">
+                    <p class="content-text mobile-medium-text">
+                        Video games progressively became the ideal place to <b style="color:var(--blue-font)">build worlds</b> drawing on our media heritage. Contemporary video game culture is obsessed with documenting these anachronistic explorations: players can now <b style="color:var(--yellow-font)">save their games</b> by livecasting on YouTube, or by taking advantage of the photography feature incorporated into many popular titles. Better yet, new retro game consoles make it possible to revisit our favourite video game worlds, and to <b style="color:var(--red-font)">get closer</b> to material aspects that have disappeared over time. 
+                    </p>
+                </div>
+                <!-- desktop menu -->
+                <div class="content-container-vert content-container-vert-23 mobile-hidden">
+                    <div class="menu-row">
+                        <div class="menu-column menu-column-bg" style="padding-right:2vw;">
+                            <img src="media\intro\Picture1.png" style="width:10vw;"/>
+                        </div>
+                        <div class="menu-column">
+                            <div class="menu-button-container">
+                                <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_1_sauvegarder.html'"/>
+                                <h1 class="menu-text-1" style="color:var(--yellow-font)">Saving the game</h1>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <div class="menu-button-container">
+                                <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_2_construire.html'"/>
+                                <h1 class="menu-text-2" style="color:var(--blue-font)">Building worlds</h1>
+                            </div>
+                            <div class="menu-button-container" style="padding-top:6vh;">
+                                <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogueEN()"/>
+                                <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <div class="menu-button-container">
+                                <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='en_3_rapprocher.html'"/>
+                                <h1 class="menu-text-3" style="color:var(--red-font)">Getting closer</h1>
+                            </div>
+                        </div>
+                        <div class="menu-column menu-column-bg">
+                            <img style="height:50%;" src="media\intro\Picture2.png"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="content-container-vert content-container-vert-23 dt-hidden">
+                    <div class="menu-row">
+                        <div class="menu-column">
+                            <div class="menu-button-container">
+                                    <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_2_construire.html'"/>
+                                    <h1 class="menu-text-2" style="color:var(--blue-font)">Building worlds</h1>
+                            </div>
+                            <div class="menu-button-container dt-padding-bottom-10">
+                                <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_1_sauvegarder.html'"/>
+                                <h1 class="menu-text-1" style="color:var(--yellow-font)">Saving the game</h1>
+                            </div>
+
+                        </div>
+                        <div class="menu-column">
+                            <div class="menu-button-container dt-padding-top-10">
+                                <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='en_3_rapprocher.html'"/>
+                                <h1 class="menu-text-3" style="color:var(--red-font)">Getting closer</h1>
+                            </div>
+                            <div class="menu-button-container">
+                                <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogueEN()"/>
+                                <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-row" style="justify-content: space-between;">
+                       <img src="media\intro\Picture1.png" style="width:20%"/>
+                        <img style="width:30%;" src="media\intro\Picture2.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SONY HANDYCAM -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <img class="full-image fs-image" src="media\3_rapprocher\Expo-retro 44b.webp"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- OBJETS 3 -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert mobile-order-1">
+                    <div class="content-container-hor content-container-hor-13">
+                        <div class="image-caption-container vert" style="align-items: center;">
+                            <img class="contained-image dt-mw-100 mobile-image-adapt-portrait-half fs-image" src="media\3_rapprocher\ExpoRetro-54.webp" />
+                            <p class="image-caption mobile-tighter appear-caption" id="cap6"><span class="red-title">Polaroid SX-70 </span><br />
+                                1972, Polaroid <br />
+                                Film photography camera<br />
+                                Private collection, Suzanne Paquet <br />
+                        </div>
+                    </div>
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert" style="align-items: center;">
+                            <img class="contained-image dt-mw-60 mobile-image-adapt fs-image" src="media\3_rapprocher\ExpoRetro-63b.webp" />
+                            <p class="image-caption mobile-tighter appear-caption" id="cap5"><span class="red-title">Magnavox Odyssey </span><br />
+                                1972, Magnavox <br />
+                                Video game console <br />
+                                LUDOV Collection<br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OBJETS 2 -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor">
+                        <div class="image-caption-container vert dt-width-60">
+                            <img class="contained-image dt-image-120 mobile-image-adapt-smaller fs-image" src="media\3_rapprocher\ExpoRetro-48b.webp" />
+                            <div class="image-caption vert mobile-text-padding-top-bottom appear-caption" id="cap4">
+                                <span class="red-title">Magnavox Odyssey 2</span><br />
+                                1978, Magnavox <br />
+                                Video game console <br />
+                                LUDOV Collection<br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-container-hor">
+                        <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                            <p class="content-text">
+                                Unusual kinship effects are revealed: a shape or color, a material, a style.
+                            </p>
+                        </div>
+                        <div class="content-container-vert content-container-vert-13 mobile-order-1" style="height:100%">
+                            <div class="image-caption-container hor">
+                                <img class="contained-image dt-mw-60 mobile-image-adapt-smaller fs-image" src="media\3_rapprocher\ExpoRetro-42.webp" />
+                                <div class="image-caption hor mobile-text-padding-top-bottom appear-caption" id="cap3" style="max-width:40%">
+                                    <span class="red-title">Sony Video 8 CCD M8 </span><br />
+                                    1985, Sony <br />
+                                    Camera <br />
+                                    Obsolescence Collection<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OBJETS -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert mobile-order-1">
+                    <div class="content-container-hor content-container-hor-13">
+                        <div class="image-caption-container vert" style="align-items: center;">
+                            <img class="contained-image dt-mw-100 mobile-image-adapt-portrait-half fs-image" src="media\3_rapprocher\ExpoRetro-45b.webp" />
+                            <p class="image-caption mobile-tighter appear-caption" id="cap2"><span class="red-title">Virtual Boy </span><br />
+                                1995, Nintendo <br />
+                                Video game console <br />
+                                LUDOV Collection<br /></p>
+                        </div>
+
+                    </div>
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert" style="align-items: center;">
+                            <img class="contained-image dt-mw-60 mobile-image-adapt fs-image" src="media\3_rapprocher\ExpoRetro-37b.webp" />
+                            <p class="image-caption mobile-tighter appear-caption" id="cap1"><span class="red-title">RCA CC6151 </span><br />
+                                1998, Thomson Consumer Electronics <br />
+                                Camera <br />
+                                Obsolescence Collection<br /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAMEBOY -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert dt-width-60">
+                            <img class="full-image fs-image" src="media\3_rapprocher\ExpoRetro-39.webp" />
+                            <div class="image-caption vert" style="transform: scale(0.9) translate(-5%);">
+                                <span class="red-title">Game Boy Color, Game Boy Camera &
+                                Game Boy Printer </span><br />
+                                1998, Nintendo<br />
+                                Obsolescence and<br />
+                                LUDOV Collections<br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text">
+                            Through these returns, rematerializations and remixes, our media come together in unlikely and anachronistic ways.
+                            <br />
+                            <br />
+                            Can you spontaneously situate the following objects in time? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEOGEO TITLES -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert">
+                            <img class="full-image fs-image" src="media\3_rapprocher\Neogeo mini titles.webp"/>
+                            <div class="image-caption vert">
+                                <a href="https://www.snk-corp.co.jp/us/neogeomini/" target="_blank">https://www.snk-corp.co.jp/us/neogeomini/</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEOGEO MINI -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-13">
+                        <img class="full-image mobile-image-adapt-portrait fs-image" src="media\3_rapprocher\Neogeo mini.webp" />
+                    </div>
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text">
+                            On these new consoles, however, one essential object is disappearing: the game cartridge. Most offer a limited selection of outstanding games - a few dozen titles out of the hundreds originally released. Are we meeting up again in order to better distance ourselves? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- MACHINE PACMAN -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-13">
+                        <img class="full-image mobile-image-adapt-portrait fs-image" src="media\1_sauvegarder\ExpoRetro-12b.webp" />
+                    </div>
+                    <div class="content-container-hor content-container-hor-23" >
+                        <div class="content-container-vert content-container-vert-13 mobile-hidden" style="height:40%">
+                            <img class="full-image fs-image" style="max-width:100%" src="media\3_rapprocher\ExpoRetro-11b.webp"/>
+                        </div>
+                        <div class="content-container-vert content-container-vert-13 dt-pacman-text">
+                            <p class="content-text mobile-text-padding-top-bottom">
+                                The rerelease of the most famous consoles from our childhood in miniature format is a sign of our desire to re-establish contact: PlayStation Classic, Neo Geo Mini and the great successes of video arcades are being reincarnated in miniature versions. The dimensions of these nostalgic games immserse us back into the world of our childhood. 
+                            </p>
+                        </div>
+                        <div class="content-container-vert content-container-vert-13" >
+                            <img class="full-image fs-image" src="media\1_sauvegarder\ExpoRetro-15b.webp"/>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>   
+
+        <!-- CUPHEAD COUCH -->
+        <div class="page-container content mobile-couch-container" >
+            <div class="content-container" >
+                <div class="content-container-vert">
+                    <div class="content-container-hor">
+                        <div class="content-container-vert content-container-vert-23 mobile-couch-tv-container">
+                            <img class="full-image mobile-couch-tv fs-image" src="media\3_rapprocher\Cuphead HDTV retro.png"/>
+                        </div>
+                        <div class="content-container-vert content-container-vert-13">
+                            <p class="content-text">
+                                And if your Ultra HD screen doesn't seem worthy of hosting this new classic, you can always take matters into your own hands to rejuvenate it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-container-hor">
+                        <div class="content-container-vert content-container-vert-23">
+                            <video id="vid3" class="contained-video dt-width-80 dt-mw-80 mobile-image-adapt" controls webkit-playsinline playsinline>
+                                <source src="media\3_rapprocher\How to Frame Your Flat Screen TV.mp4" />
+                            </video>
+                        </div>
+                        <div class="content-container-vert content-container-vert-13">   
+                        </div>
+                    </div>
+                </div>
+                <img class="full-image dt-couch mobile-couch"  src="media\3_rapprocher\Cuphead couch final.png"/>           
+            </div>
+        </div>
+
+        <!-- VIDEO CUPHEAD -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-13 mobile-order-2">
+                        <p class="content-text mobile-text-padding">
+                            All the trends we have observed so far converge in this great success from the Moldenhauer brothers.
+                        </p>
+                    </div>
+                    <div class="content-container-hor content-container-hor-23 mobile-order-1">
+                        <div class="video-container">
+                            <div class="image-caption-container vert">
+                                <video id="vid2" class="contained-video" controls webkit-playsinline playsinline>
+                                    <source src="media\3_rapprocher\Cuphead Launch Trailer.mp4" />
+                                </video>
+                                <div class="image-caption vert">
+                                    <span class="red-title">Cuphead </span><br />
+                                    2017, StudioMDHR<br />
+                                    Platform : PlayStation 4 <br />
+                                    LUDOV Collection<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GIF CINEGRAIN -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert">
+                            <img class="full-image fs-image" src="media/3_rapprocher/CineGrainArtifacts.gif"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARTIFACTS -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert">
+                            <img class="full-image fs-image" src="media\3_rapprocher\Cinegrain scratches.webp" />
+                            <div class="image-caption vert">
+                                <a href="http://www.cinegrain.com/" target="_blank">http://www.cinegrain.com/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text mobile-text-padding">
+                            This backwards march is not at all unheard of in the recent history of visual cultures. Soon after the advent of digital cameras, filmmakers and photographers hoping to reproduce warmer takes could superimpose false analogue film grain (and many more “imperfections”) onto their images.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <!-- OBRA DINN -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="video-container">
+                            <div class="image-caption-container vert">
+                                <video id="vid1" class="contained-video" controls webkit-playsinline playsinline>
+                                    <source src="media\3_rapprocher\Return to the Obra Dinn.mp4"/>
+                                </video>
+                                <div class="image-caption vert">
+                                    <span class="red-title">Return of the Obra Dinn </span><br />
+                                    2018, 3909 <br />
+                                    Platform : Windows <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text mobile-text-padding">
+                            …and some go back much further!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <!-- CLOCKWORK AQUARIO -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="video-container">
+                            <div class="image-caption-container hor">
+                                <img class="contained-image fs-image" src="media\3_rapprocher\Clockwork Aquario.webp" />
+                                <div class="image-caption hor">
+                                    <span class="red-title">Clockwork Aquario</span><br />
+                                    2021, Westone<br />
+                                    Platform : PlayStation 4
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text mobile-text-padding">
+                            A great many retro games now incorporate similar filters. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <!-- CRT simulator-->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">
+                        While the “levelled” version of the pixel is in the process of passing into history, attempts to bring us back together with our old TV sets are multiplying. Since 2015, Kyle Pittman’s cathode tube simulator has made it possible to reproduce the appearance of this out of date technology on our LCD screens. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="image-caption-container hor">
+                        <img class="contained-image dt-mw-40" src="media\3_rapprocher\CRT simulator color.jpg"></img>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NORCO CLOSE-UP -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-13 mobile-order-2">
+                        <p class="content-text mobile-text-padding">
+                            Oversized pixels do not limit this sense of proximity, on the contrary
+                        </p>
+                    </div>
+                    <div class="content-container-hor content-container-hor-23 mobile-order-1">
+                        <div class="video-container">
+                            <div class="image-caption-container hor">
+                                <img class="contained-image dt-width-40 mobile-image-adapt-portrait-half fs-image" src="media\3_rapprocher\Norco close up.jpg" />
+                                <div class="image-caption hor">
+                                    Imperfect future.<br/>
+                                    The android Million, a character from <i>Norco</i>.<br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <!-- NORCO -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text">In 2021, the first video game from the Geography of Robots collective won a prize at the Tribeca film festival. Norco is an “unreal” game, an audiovisual, pixellated gothic video game science fiction novel. It is also the real hometown of some of the game's creators. Thanks to its retro aesthetic and its minimalist, user-friendly quality, inspired by a 1980s graphic adventure, Norco plunges us into a dystopian Louisiana which seems a little too close to contemporary issues. 
+                        </p>
+                    </div>
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="video-container">
+                            <div class="image-caption-container hor">
+                                <img class="contained-image fs-image mobile-image-adapt-25" src="media\3_rapprocher\Norco.jpg" />
+                                <div class="image-caption hor">
+                                    <span class="red-title">Norco</span><br />
+                                    2022, Geography of Robots<br />
+                                    Platform : PC
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TITRE -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <img class="title-image" src="media\titles\en_title_rapprocher.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- NAVIGATION OVERLAY -->
+    <div class="menu-overlay">
+        <button id="right-scroll-button" class="menu-button right-scroll-button"><img src="media\menu\button_fw.png"/></button>
+        <button id="left-scroll-button" class="menu-button left-scroll-button"><img src="./media/menu/button_rew.png"/></button>
+        <button id="navigation-button" class="menu-button navigation-button" onclick="showControls()"><img src="media\menu\audio_button_tv.png"/></button>
+        <div id="audio-controls" class="menu-button audio-controls">
+            <img src="media\menu\audio_button.png">
+            <span class="audio-artist"><p id="audio-artist-text">Artist</p></span>
+            <span id="audio-title-wrapper" class="audio-title-wrapper"><span class="audio-title"><p id="audio-title-text">Title</p></span></span>
+            <button id="audio-button-next"><i class="fa fa-forward"></i></button>
+            <button id="audio-button-mute"><i class="fa fa-pause"></i></button>
+            <button id="audio-button-start"><i class="fa fa-play"></i></button>
+            <audio id="audio"><source id="audio-source" src=""></audio>
+        </div>
+    </div>
+
+    <script src="js/animations.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/scroll-main.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/main-sections.js"></script>
+    <script src="js/3_rapprocher.js"></script>
+    <script>snapToPage();</script>
+</body>

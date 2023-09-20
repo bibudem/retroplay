@@ -1,0 +1,661 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Rétro-Ludicité</title>
+    <link rel="icon" type="image/x-icon" href="media\menu\favicon.png">
+    <link rel="stylesheet" href="media\font\Comfortaa-Regular.ttf">
+    <link rel="stylesheet" href="media\font\Comfortaa-Bold.ttf" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="stylesheet" href="css/mobile_interface.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link href="https://fonts.cdnfonts.com/css/pixel-millennium" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width,  initial-scale=0.8, user-scalable=0"/>
+    <div id="page-loader-indicator"></div>
+    <div id="page-loader-background"></div>
+    <div class="scroll-container">
+    <!-- SECTION SELECTION MENU -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13">
+                <p class="content-text mobile-medium-text">
+                    Le jeu vidéo est progressivement devenu le lieu par excellence où la <b style="color:var(--blue-font)">construction des mondes</b> se nourrit de notre passé médiatique. La culture du jeu contemporaine est obsédée par la documentation de ces déambulations anachroniques: les joueuses et les joueurs peuvent désormais se <b style="color:var(--yellow-font)">sauvegarder</b> en téléversant sur YouTube des séances de jeu filmées, ou encore en profitant du mode photo intégré au sein de nombreux jeux populaires. Mieux, de nouvelles consoles de jeu rétro nous permettent non seulement de revisiter nos univers vidéoludiques préférés, mais aussi de <b style="color:var(--red-font)">se rapprocher</b> des aspects matériels disparus avec le temps.</p>
+            </div>
+            <!-- desktop menu -->
+            <div class="content-container-vert content-container-vert-23 mobile-hidden">
+                <div class="menu-row">
+                    <div class="menu-column menu-column-bg" style="padding-right:2vw;">
+                        <img src="media\intro\Picture1.png" style="width:10vw;"/>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='1_sauvegarder.html'"/>
+                            <h1 class="menu-text-1" style="color:var(--yellow-font)">Sauvegarder</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='2_construire.html'"/>
+                            <h1 class="menu-text-2" style="color:var(--blue-font)">Construire des mondes</h1>
+                        </div>
+                        <div class="menu-button-container" style="padding-top:6vh;">
+                            <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogue()"/>
+                            <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='3_rapprocher.html'"/>
+                            <h1 class="menu-text-3" style="color:var(--red-font)">Se rapprocher</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column menu-column-bg">
+                        <img style="height:50%;" src="media\intro\Picture2.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="content-container-vert content-container-vert-23 dt-hidden">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                                <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='2_construire.html'"/>
+                                <h1 class="menu-text-2" style="color:var(--blue-font)">Construire des mondes</h1>
+                        </div>
+                        <div class="menu-button-container dt-padding-bottom-10">
+                            <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='1_sauvegarder.html'"/>
+                            <h1 class="menu-text-1" style="color:var(--yellow-font)">Sauvegarder</h1>
+                        </div>
+
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container dt-padding-top-10">
+                            <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='3_rapprocher.html'"/>
+                            <h1 class="menu-text-3" style="color:var(--red-font)">Se rapprocher</h1>
+                        </div>
+                        <div class="menu-button-container">
+                            <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogue()"/>
+                            <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" style="justify-content: space-between;">
+                   <img src="media\intro\Picture1.png" style="width:20%"/>
+                    <img style="width:30%;" src="media\intro\Picture2.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- VIDEO FEZ / 3D DOT HEROES -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="video-container">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <video id="vid6" class="contained-video" controls webkit-playsinline playsinline>
+                            <source src="media\3_rapprocher\fez_3d-dot-heroes.mp4" type="video/mp4" />
+                        </video>
+                        <div style="display:flex; flex-direction:column; padding-left:2vw;">
+                            <div class="image-caption">
+                                <span class="blue-title">Fez</span><br />
+                                2012, Polytron<br />
+                                Plateforme : Nintendo Switch<br />
+                            </div>
+                            <div class="image-caption">
+                                <span class="blue-title">3D Dot Game Heroes</span> <br />
+                                2009, Silicon Studio<br />
+                                Plateforme : PlayStation 3<br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MINECRAFT -->
+        <div class="page-container content">
+            <div class="content-container-vert">
+                <div class="content-container-hor content-container-hor-23">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <img class="contained-image mobile-image-adapt-portrait mobile-halo-padding fs-image dt-mw-50" src="media\2_construire\Minecraft blocky.webp" />
+                            <div class="image-caption hor">
+                                <span class="blue-title">Minecraft</span><br />
+                                2009, Markus Persson<br />
+                                Plateforme : PC
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="content-container-hor content-container-hor-13">
+                    <p class="content-text mobile-text-padding">Le pixel surdimensionné prend encore de l’expansion au sein des univers 3D comme <i>Minecraft</i>. Il se confond progressivement avec un bloc de construction.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- DEER GOD -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">
+                        Les créateurices adoptent les techniques de dessins d’une autre époque afin de réaliser des décors naturels magnifiques. Pour les plus jeunes, le pixel art constitue maintenant un choix stylistique parmi tant d’autres. Le pixel surdimensionné n’a plus rien à voir avec la nostalgie à ce moment. Il est devenu un élément parfaitement naturel dans leur palette expressive. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image dt-mw-45 fs-image" src="media\intro\The deer god.webp"/>
+                        <div class="image-caption hor">
+                            <p class="image-caption"><span class="blue-title">The Deer God</span><br/> 2015, Crescent Moon Games<br/>Plateforme : PC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TMNT -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-23">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image dt-mw-40 fs-image" src="media\2_construire\TMNT Tribute Games.webp"/>
+                        <div class="image-caption hor">
+                            <span class="blue-title">Teenage Mutant Ninja Turtles: Shredder's Revenge   </span>     <br/>
+                            2022, Tribute Games<br/>
+                            Plateforme : Nintendo Switch<br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container-vert content-container-vert-13">
+                    <p class="content-text mobile-text-padding">
+                        L’engouement contemporain pour le jeu rétro démontre l’attrait durable, au niveau audiovisuel et ludique, de genres classiques comme le beat ‘em up, le jeu de plateforme et le jeu de rôle. Tribute games, une autre compagnie québécoise, séduit actuellement un nouveau public à travers la franchise <i>Teenage Mutant Ninja Turtles</i>. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Sydney Hunter -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13">
+                    <p class="content-text">
+                        CollectorVision a matérialisé la série <i>Sydney Hunter</i> sur plusieurs plateformes récentes, mais aussi sur des cartouches d’Intellivision, de Super Nintendo, de Sega Master System… 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image dt-mw-40 fs-image" src="media\2_construire\ExpoRetro-22b_sydneyhunter.webp"/>
+                        <div class="image-caption hor">
+                            <span class="blue-title">Sydney Hunter & The Caverns of Death  </span>      <br/>
+                            2018, CollectorVision<br/>
+                            Plateforme : Super NES   <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- DEMAKE WITCHER -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">
+                        Le « démake » consiste à transposer un jeu vidéo plus ou moins récent sur une plateforme technologique antérieure et « dépassée ». Cette pratique fascinante, souvent initiée par des fans, repose sur l’imitation de signatures visuelles, auditives ou mécaniques. Elle semble aller à contre-courant de l’obsolescence instaurée par l’industrie du jeu vidéo, en démontrant la durabilité insoupçonnée et le potentiel ludique de plateformes obsolètes.
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                        <div class="image-caption-container hor">
+                            <div class="image-caption hor"></div>
+                            <video id="vid5" class="contained-video dt-width-45" controls webkit-playsinline playsinline>
+                                <source src="media\2_construire\The Witcher 3 but it's for PS1.mp4"/>
+                            </video>
+                            <div class="image-caption hor">
+                                <span class="blue-title">The Witcher 3 but it's for PS1 </span>   <br/>
+                                2021, Anders Lundbjörk <br/>
+                                Vidéo YouTube <br/>
+                            </div>
+                        </div>   
+                </div>
+            </div>
+        </div>
+        
+        <!-- HALO -->
+        <div class="page-container content">
+            <div class="content-container-vert">
+                <div class="content-container-hor content-container-hor-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">Certains créateurs n’hésitent pas à reconstruire des titres célèbres à l’aide de composants matériels d’une autre époque. Cette cartouche créée par Ed Fries en 2010 fonctionne sans problème sur une console Atari VCS originale. 
+                    </p>
+                </div>
+                <div class="content-container-hor content-container-hor-23 mobile-order-1">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <img class="contained-image dt-mw-40 mobile-image-adapt-portrait-half mobile-halo-padding fs-image" src="media\2_construire\ExpoRetro-21b_halo.webp" />
+                            <div class="image-caption hor">
+                                <span class="blue-title">Halo 2600</span><br />
+                                2010, Ed Fries <br />
+                                Plateforme : Atari 2600 <br />
+                                Collection du LUDOV <br />
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- BOSS MONSTER -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image fs-image" src="media\2_construire\ExpoRetro-20b_bossmonster.webp" />
+                        <div class="image-caption hor">
+                            <span class="blue-title">Boss Monster: The Dungeon Building Card Game</span><br />
+                            2013, Johnny O'Neal, Chris O'Neal et Christopher O'Neal <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13">
+                    <img class="contained-image fs-image" style="width:100%;max-width:100%;max-height:150%; height:150%" src="media\2_construire\ExpoRetro-18b_cards.webp"/>
+                </div>
+                <div class="content-container-vert content-container-vert-13">
+                    <p class="content-text">
+                        Dans <i>Boss Monster</i>, vous devez construire des niveaux pour freiner les héros des joueurs adverses. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-13">
+                    <img class="contained-image fs-image" style="width:100%;max-width:100%;max-height:150%; height:150%" src="media\2_construire\ExpoRetro-19b_cards2.webp"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- DONKEY KONG  -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">
+                        De nos jours, les jeux traditionnnels sont couramment désignés par l’expression inédite et confondante de « jeux analogiques ».
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image fs-image dt-mw-50" src="media\2_construire\ExpoRetro-32b_donkeykong.webp"/>
+                        <div class="image-caption hor">
+                            <span class="blue-title">Donkey Kong </span><br />
+                            1981, Jeffrey Breslow, Don Rosenwinkel et John Zaruba<br />
+                            Collection du projet Obsolescence <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO JAMES POND-->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="video-container">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <video class="contained-video mobile-text-padding mobile-image-adapt" id="vid4" controls webkit-playsinline playsinline>
+                            <source src="media\2_construire\James Pond 2 Robocod_audio.mp4" />
+                        </video>
+                        <div class="image-caption hor">
+                            <span class="blue-title">James Pond 2: Codename: RoboCod</span><br />
+                            1991, Vectordean<br />
+                            Plateforme : Amiga<br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO GOLF STORY -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="video-container">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <video class="contained-video mobile-image-adapt" id="vid3" controls webkit-playsinline playsinline>
+                            <source src="media\2_construire\Golf story.mp4" />
+                        </video>
+                        <div class="image-caption hor">
+                            <span class="blue-title">Golf Story</span><br />
+                            2017, Sidebar Games<br />
+                            Plateforme : Nintendo Switch <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HARLEQUIN -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor">
+                        <p class="content-text">
+                            Bien souvent, les niveaux inspirés par le cinéma et la télévision cohabitent, dans un même jeu
+                            vidéo, avec un ou plusieurs niveaux thématisés autour des jouets de l’enfance, comme les blocs de
+                            construction ou les cartes à jouer (appuyez sur l'image pour agrandir!)
+                        </p>
+                    </div>
+                    <div class="content-container-hor">
+                        <div class="video-container dt-width-40">
+                            <div class="image-caption-container vert" >
+                                <img class="contained-image mobile-image-adapt-portrait-half fs-image mobile-text-padding-top-bottom" style="max-width:120%" src="media\2_construire\Harlequin box.webp" />
+                                <div class="image-caption vert">
+                                    <span class="blue-title">Harlequin</span><br />
+                                    1992, The Warp Factory<br />
+                                    Plateforme : Amiga 500<br />
+                                    Collection du projet Obsolescence<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ÉMULATION LAZY JONES -->
+        <div class="page-container content" >
+            <div class="content-container" >
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding mobile-medium-text">
+                        Dès 1984, <i>Lazy Jones</i> nous propose d’incarner un concierge qui préfère jouer, au travail, à plusieurs clones de jeux vidéo déjà passés à l’histoire, installés dans chaque bureau de l’édifice. La trame sonore de David Whittaker invite les joueurs et les joueuses à fredonner des succès comme <i>99 Red Balloons</i> ou <i>Fade to Grey</i>.
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <div class="image-caption hor mobile-hidden"></div>
+                            <img class="contained-image dt-hidden mobile-image-adapt-25" src="media\2_construire\screenshot_lazyjones.png"/>
+                            <iframe class="emulator mobile-hidden" src="https://archive.org/embed/zx_Lazy_Jones_1984_Terminal_Software" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                            <div class="image-caption hor mobile-small-text">
+                                <span class="blue-title">Lazy Jones</span><br/>
+                                1984, David Whittaker<br/>
+                                Plateforme: Commodore&nbsp;64 (émulation)<br />
+                                Source: Internet Archive<br/>
+                                <br/>
+                                <span class="mobile-hidden">
+                                    <b>Contrôles</b><br/>
+                                    Q: Haut<br/>
+                                    A: Bas<br/>
+                                    O: Gauche<br/>
+                                    P: Droite<br/>
+                                    M: Tirer<br/>
+                                </span>
+                                <span class="dt-hidden mobile-emulator-notice"><i class="fa fa-gamepad"></i> Accédez à l'exposition sur votre ordinateur de bureau pour jouer.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO VIROCOP -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="video-container">
+                    <div class="image-caption-container hor">
+                        <video class="contained-video" id="vid2" controls webkit-playsinline playsinline>
+                            <source src="media\3_rapprocher\virocop.mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIROCOP -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">
+                        Souvent, le jeu revient sur son propre passé. À la manière de Trace dans <i>Axiom Verge</i>, Dave doit purger le « Gamedisk » de virus informatiques.  Il rencontre au sein de ce parc virtuel des ennemis bien connus. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image fs-image dt-width-40" src="media\2_construire\ExpoRetro-24_virocop.webp" />
+                        <div class="image-caption hor">
+                            <span class="blue-title">Virocop</span><br />
+                            1995, Graftgold<br />
+                            Plateforme : Amiga<br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- EMULATOR ZAMN -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-23 dt-height-90">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <div class="image-caption hor mobile-hidden"></div>
+                            <img class="contained-image dt-hidden mobile-image-adapt-25" src="media\2_construire\screenshot_zamn.png"></img>
+                            <iframe class="emulator mobile-hidden" src="https://archive.org/embed/sg_Zombies_Ate_My_Neighbors_1993_Konami_LucasArts_US" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                            <div class="image-caption hor mobile-small-text">
+                                <span class="blue-title">Zombies Ate My Neighbors</span><br />
+                                1993, Konami<br />
+                                Plateforme: Super NES (émulation)<br />
+                                Source: Internet Archive <br/>
+                                <br/>
+                                <span class="mobile-hidden">
+                                    <b>Contrôles</b><br/>
+                                    Joueur 1 <br/>
+                                    Flèches: Déplacer<br/>
+                                    Alt: Tirer<br/>
+                                    <br/>
+                                    Joueur 2<br/>
+                                    RDFG: Se déplacer<br/>
+                                    S: Tirer<br/>
+                                </span>
+                                <span class="dt-hidden mobile-emulator-notice"><i class="fa fa-gamepad"></i> Accédez à l'exposition sur votre ordinateur de bureau pour jouer.</span>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container-vert content-container-vert-13">
+                    <p class="content-text mobile-text-padding">
+                        <i>Zombies Ate my Neighbors</i>, jeu d’action à quatre mains paru à la même époque, propose un patchwork jubilatoire de films d’épouvante. Seul un cinéphile averti pourra espérer deviner toutes les références aux <i>monster movies</i> enfouies dans ce jeu culte.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EMULATOR SUNSET RIDERS-->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-23 dt-height-90">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <div class="image-caption hor"></div>
+                            <iframe class="emulator mobile-hidden" src="https://archive.org/embed/sg_Sunset_Riders_1992_Konami_US" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                            <img class="contained-image dt-hidden mobile-image-adapt-25" src="media\2_construire\screenshot_sunsetriders.png"></img>
+                            <div class="image-caption hor">
+                                <span class="blue-title">Sunset Riders                        </span>       <br/>    
+                                1993, LucasArts                             <br/>      
+                                Plateforme: Super NES (émulation)<br />   
+                                Source : Internet Archive                 <br/>
+
+                                <br/>
+                                <span class="mobile-hidden">
+                                    <b>Contrôles</b><br/>
+                                    1: Start<br/>
+                                    Ctrl/Alt: Tirer<br/>
+                                    Espace: Sauter<br/>
+                                    Flèches: Se déplacer/Viser<br/>
+                                </span>
+                                <span class="dt-hidden mobile-emulator-notice"><i class="fa fa-gamepad"></i> Accédez à l'exposition sur votre ordinateur de bureau pour jouer.</span>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container-vert content-container-vert-13">
+                    <p class="content-text mobile-text-padding">
+                        Dans <i>Sunset Riders</i>, impossible de voir Monument Valley et ses environs sans penser d’abord au répertoire du western. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO HUNTDOWN -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="video-container">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <video id="vid1" class="contained-video" controls webkit-playsinline playsinline>
+                            <source src="media\2_construire\huntdown.mp4"/>
+                        </video>
+                        <div style="display:flex; flex-direction:column; padding-left:2vw;">
+                            <div class="image-caption">
+                                <span class="blue-title">Huntdown</span><br />
+                                2020, Easy Trigger Games<br />
+                                Plateforme : PlayStation 4,<br />
+                            </div>
+                        </div>
+                    </div>        
+                </div>        
+            </div>
+        </div>
+
+        <!-- Carousel KOC -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="image-caption-container hor carousel-container">
+                        <a class="prev mobile-hidden" onclick="plusImage(-1)">&#10094;</a>
+                        <img class="contained-image dt-width-45 fs-image" id="carousel-koc" src="media\2_construire\KoC1.webp"/>
+                        <a class="next mobile-hidden" onclick="plusImage(1)">&#10095;</a>
+                        <div class="mobile-carousel-buttons dt-hidden"><a class="prev" onclick="plusImage(-1)">&#10094;</a><a class="next" onclick="plusImage(1)">&#10095;</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KING OF CHICAGO -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image dt-width-45 fs-image" src="media\2_construire\ExpoRetro-71_kingofchicago.webp"/>
+                        <div class="image-caption hor">
+                            <span class="blue-title">The King of Chicago</span><br />
+                            1987, Master Designer Software<br />
+                            Plateforme : Amiga<br />
+                            Collection du LUDOV<br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT CAME FROM THE DESERT -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image fs-image" src="media\2_construire\ExpoRetro-26_itcamefromthedesert.webp"/>
+                        <div class="image-caption hor">
+                            <span class="blue-title">It Came from the Desert          </span>       <br/>
+                            1989, Cinemaware Corporation            <br/>
+                            Plateforme : Amiga                      <br/>
+                            Collection du LUDOV        <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SNATCHER  -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding">
+                        Ces constructions techno-nostalgiques prolifèrent au tournant des années 1990. À une époque où il est impensable de reproduire des images de cinéma dans un jeu vidéo, le pastiche de genres hollywoodiens classiques prend beaucoup de place sur nos écrans. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor"></div>
+                        <img class="contained-image fs-image" src="media\2_construire\ExpoRetro-27b_cdroms.webp"/>
+                        <div class="image-caption hor"><span class="blue-title">Snatcher</span><br/>
+                            1992, Konami<br/>
+                            Plateforme: PC Engine CD-ROM2<br/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIAPO 1 -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                        <div class="content-container-hor content-container-hor">
+                            <div class="content-container-vert content-container-vert-13">
+                                <p class="content-text">
+                                    Les artistes du jeu vidéo s’inspirent inlassablement de leur nostalgie médiatique pour fabriquer de nouveaux mondes. Des fragments empruntés à l’imaginaire ou aux technologies du cinéma, de la télévision et du jeu vidéo deviennent en quelque sorte les « briques » qui permettent de construire des niveaux de jeu, par exemple les plateformes de télévisions dans <i>Harlequin</i>. 
+                                </p>
+                            </div>
+                            <div class="content-container-vert content-container-vert-23">
+                                <img class="full-image" src="media\2_construire\construire_tv.jpg"/>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TITRE -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <img class="title-image" src="media\2_construire\titre_construire.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        <!-- NAVIGATION OVERLAY -->
+        <div class="menu-overlay">
+            <button id="right-scroll-button" class="menu-button right-scroll-button"><img src="media\menu\button_fw.png"/></button>
+            <button id="left-scroll-button" class="menu-button left-scroll-button"><img src="./media/menu/button_rew.png"/></button>
+        
+            <button id="navigation-button" class="menu-button navigation-button" onclick="showControls()"><img src="media\menu\audio_button_tv.png"/></button>
+            <div id="audio-controls" class="menu-button audio-controls">
+                <img src="media\menu\audio_button.png">
+                <span class="audio-artist"><p id="audio-artist-text">Artist</p></span>
+                <span id="audio-title-wrapper" class="audio-title-wrapper"><span class="audio-title"><p id="audio-title-text">Title</p></span></span>
+                <button id="audio-button-next"><i class="fa fa-forward"></i></button>
+                <button id="audio-button-mute"><i class="fa fa-pause"></i></button>
+                <button id="audio-button-start"><i class="fa fa-play"></i></button>
+                <audio id="audio"><source id="audio-source" src=""></audio>
+            </div>
+        </div>
+    
+        <script src="js/animations.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/scroll-main.js"></script>
+        <script src="js/audio.js"></script>
+        <script src="js/main-sections.js"></script>
+        <script src="js/2_construire.js"></script>
+        <script>snapToPage();</script>
+</body>

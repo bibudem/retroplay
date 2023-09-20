@@ -1,0 +1,308 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retro-Play</title>
+    <link rel="icon" type="image/x-icon" href="media\menu\favicon.png">
+    <link rel="stylesheet" href="media\font\Comfortaa-Regular.ttf">
+    <link rel="stylesheet" href="media\font\Comfortaa-Bold.ttf" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="stylesheet" href="css/mobile_interface.css">
+    <link href="https://fonts.cdnfonts.com/css/pixel-millennium" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width,  initial-scale=0.8, user-scalable=0"/>
+    <div id="page-loader-indicator"></div>
+    <div id="page-loader-background"></div>
+    <div class="scroll-container">
+    
+    <!-- SECTION SELECTION MENU -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13">
+                <p class="content-text mobile-medium-text">
+                    Video games progressively became the ideal place to <b style="color:var(--blue-font)">build worlds</b> drawing on our media heritage. Contemporary video game culture is obsessed with documenting these anachronistic explorations: players can now <b style="color:var(--yellow-font)">save their games</b> by livecasting on YouTube, or by taking advantage of the photography feature incorporated into many popular titles. Better yet, new retro game consoles make it possible to revisit our favourite video game worlds, and to <b style="color:var(--red-font)">get closer</b> to material aspects that have disappeared over time. 
+                </p>
+            </div>
+            <!-- desktop menu -->
+            <div class="content-container-vert content-container-vert-23 mobile-hidden">
+                <div class="menu-row">
+                    <div class="menu-column menu-column-bg" style="padding-right:2vw;">
+                        <img src="media\intro\Picture1.png" style="width:10vw;"/>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_1_sauvegarder.html'"/>
+                            <h1 class="menu-text-1" style="color:var(--yellow-font)">Saving the game</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_2_construire.html'"/>
+                            <h1 class="menu-text-2" style="color:var(--blue-font)">Building worlds</h1>
+                        </div>
+                        <div class="menu-button-container" style="padding-top:6vh;">
+                            <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogueEN()"/>
+                            <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='en_3_rapprocher.html'"/>
+                            <h1 class="menu-text-3" style="color:var(--red-font)">Getting closer</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column menu-column-bg">
+                        <img style="height:50%;" src="media\intro\Picture2.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="content-container-vert content-container-vert-23 dt-hidden">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                                <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_2_construire.html'"/>
+                                <h1 class="menu-text-2" style="color:var(--blue-font)">Building worlds</h1>
+                        </div>
+                        <div class="menu-button-container dt-padding-bottom-10">
+                            <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='en_1_sauvegarder.html'"/>
+                            <h1 class="menu-text-1" style="color:var(--yellow-font)">Saving the game</h1>
+                        </div>
+
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container dt-padding-top-10">
+                            <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='en_3_rapprocher.html'"/>
+                            <h1 class="menu-text-3" style="color:var(--red-font)">Getting closer</h1>
+                        </div>
+                        <div class="menu-button-container">
+                            <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogueEN()"/>
+                            <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" style="justify-content: space-between;">
+                   <img src="media\intro\Picture1.png" style="width:20%"/>
+                    <img style="width:30%;" src="media\intro\Picture2.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- PAGE 8 (5 IMAGES TECH) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 gallery mobile-order-2">
+                    <p class="content-text mobile-text-padding">Our individual and collective memory is archived on a myriad of technological supports which do not always withstand the test of time. These out-of-date technologies are more present than ever, however, in our nostalgic impulses, inseparable from our desire to rediscover a fantasized childhood or home. Analogue revival. Vintage couture. Camcorder comeback. Vinyl resurgence. Retro gaming. “Technostalgia” is everywhere.
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 gallery mobile-order-1">
+                    <div class="content-container-hor content-container-hor-15 gallery">
+                        <img class="full-image fs-image" src="media\intro\ExpoRetro-70c.webp" />
+                    </div>
+                    <div class="content-container-hor content-container-hor-15 gallery">
+                        <img class="full-image fs-image" src="media\intro\ExpoRetro-14b.webp" />
+                    </div>
+                    <div class="content-container-hor content-container-hor-15 gallery">
+                        <img class="full-image fs-image" src="media\intro\ExpoRetro-4c.webp" />
+                    </div>
+                    <div class="content-container-hor content-container-hor-15 gallery">
+                        <img class="full-image fs-image" src="media\intro\ExpoRetro-38b.webp" />
+                    </div>
+                    <div class="content-container-hor content-container-hor-15 gallery">
+                        <img class="full-image fs-image" src="media\intro\ExpoRetro-7b.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 7 (ÉMULATEUR LCD) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="image-caption-container mobile-link dt-hidden">
+                        <img class="contained-image" src="media\intro\Expo-Retro intro Pittman a.webp" />
+                        <img class="contained-image" src="media\intro\Expo-Retro intro Pittman b.webp" />
+                    </div>
+                    <p class="image-caption mobile-tighter dt-hidden"><span class="orange-title">Zelda II: The Adventure of Link</span><br/>Platform : NES, 1987<br/><br/> Left : emulation on LCD screen<br/>Right : NES console on CRT screen<br/>       
+                
+                    <div class="content-container-hor content-container-hor-13 mobile-hidden">
+                        <div class="image-caption-container vert" style="align-items: start;padding-left:5vw;">
+                            <img class="contained-image fs-image" src="media\intro\Expo-Retro intro Pittman a.webp" />
+                            <p class="image-caption"><span class="orange-title">Zelda II: The Adventure of Link</span><br>Platform : NES, 1987</p>
+                        </div>
+                    </div>
+                    <div class="content-container-hor content-container-hor-13 mobile-text-padding">
+                        <p class="content-text">Is this illusory pixellation actually “pixel perfect”? During the mid 2010s, a series of posts went viral on social media. These posts highlight the gulf separating our modern understanding of retro visuals from their point of origin on CRTs. 
+                        </p>
+                    </div>
+                    <div class="content-container-hor content-container-hor-13 mobile-hidden">
+                        <div class="image-caption-container vert" style="align-items:end;padding-right:5vw;">
+                            <img class="contained-image fs-image" src="media\intro\Expo-Retro intro Pittman b.webp" />
+                            <p class="image-caption mobile-tighter" style="text-align:right;">Left : Emulation on LCD screen<br>Right : NES console on CRT screen<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 5 (DEER GOD) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text">A great number of contemporary "retro" video games build up worlds with a new fundamental brick: overblown pixels. This pixellated aspect is an illusion. It is no longer connected to the technical and material aspects of our TV sets. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="content-container-hor">
+                        <div class="image-caption-container vert dt-center-align">
+                            <img class="contained-image dt-mw-100 mobile-image-adapt fs-image" src="media\intro\The deer god.webp" />
+                            <p class="image-caption mobile-tighter"><span class="orange-title">The Deer God</span><br/> 2015, Crescent Moon Games<br>Platform : PC</p>
+                        </div>
+                    </div>
+                    <div class="content-container-hor">
+                        <div class="image-caption-container vert dt-center-align ">
+                            <img class="contained-image dt-mw-100 mobile-image-adapt fs-image" src="media\intro\Kingdom New lands.webp" />
+                            <p class="image-caption mobile-tighter"><span class="orange-title">Kingdom: New Lands</span><br/> 2016, Noio<br>Platform : PC
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 4 (AXIOM VERGE) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text"><i>Axiom Verge</i> mimics the <i>Harlequin</i> aesthetic. “Glitches” from the past are spreading all over our Ultra HD 4K screens, along with an artificially limited colour palette, and repetitive compositions of bitmap tiles (vestiges of the limited memory of platforms from the good old days).
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="content-container-hor content-container-hor-13">
+                        <div class="image-caption-container vert" style="align-items: center;">
+                            <img class="contained-image dt-mw-100 mobile-image-adapt fs-image" src="media\intro\Expo-Retro intro Harlequin.webp" />
+                            <p class="image-caption mobile-tighter mobile-no-padding"><b>1992</b></p>
+                        </div>
+
+                    </div>
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="image-caption-container vert" style="align-items: center;">
+                            <img class="contained-image dt-mw-100 mobile-image-adapt fs-image" src="media\intro\Expo-Retro intro Axiom Verge.webp" />
+                            <p class="image-caption mobile-tighter mobile-no-padding"><b>2015</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 4 (AXIOM VERGE GUN) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-13 mobile-order-2">
+                        <p class="content-text mobile-text-padding">
+                            In order to repair or corrupt some fragments of this sci-fi universe, Trace must use his “glitch gun.” The visual effects are inspired by technological defects well known to retrogamers.
+                        </p>
+                    </div>
+                    <div class="content-container-hor content-container-hor-23 mobile-order-1">
+                        <img class="full-image fs-image dt-mw-80" src="media\intro\Axiom verge glitch gun.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <!-- PAGE 3 (AXIOM VERGE) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert">
+                    <div class="content-container-hor content-container-hor-23">
+                        <div class="video-container dt-width-80">
+                            <div class="image-caption-container vert" >
+                                <img class="contained-image fs-image mobile-padding-10 mobile-image-adapt-25" style="max-width:120%" src="media\intro\Expo-Retro intro Axiom Verge closeup.webp" />
+                                <div class="image-caption vert">
+                                    <span class="orange-title">Axiom Verge</span><br />
+                                    2015, Thomas Happ<br />
+                                    Platform : PlayStation 4<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-container-hor content-container-hor-13">
+                        <p class="content-text mobile-text-padding">
+                            In a retro-looking game released twenty-three years later, our protagonist Trace encounters a gigantic bio-mechanical figure inspired by Slavic folklore. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 2 (ORIGINE - TV CRT) -->
+        <div class="page-container">
+            <svg class="intro-line-drawing mobile-hidden" id="intro-line-drawing" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="var(--yellow-font)" id="path1" stroke-width="3"  fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <path stroke="var(--blue-font)" id="path2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <path stroke="var(--red-font)" id="path3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="image-container harlequin">
+                <img class="full-image full-image-intro" id="intro-line-image" src="media\intro\Expo-Retro intro a.webp"></img>
+                <div class="cover-image-text-insert "><p class="content-text">In one corner of this labyrinth, our pixellated avatar discovers a muddled image of himself transmitted over the air on a gigantic television set. Or perhaps he is now facing, in fact, a more faithful reflection of his origins?
+                </p></div>  
+            </div>
+        </div>
+        <!-- PAGE 1 (TV WONDERLAND) -->
+        <div class="page-container content">
+            <div class="content-container">
+                <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                    <p class="content-text mobile-text-padding mobile-medium-text ">
+                        "TV Wonderland", a labyrinth constructed with media platforms old and new, is an actual game level that appeared on our screens in 1992. In this platform game, players are invited to control the acrobatics of Harlequin, the sixteenth-century commedia dell’arte jester, recently reincarnated as Harley Quinn in the transmedia world of DC Comics. 
+                    </p>
+                </div>
+                <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor mobile-hidden"></div>
+                        <div class="overlay-container">
+                            <img class="contained-image fs-image mobile-padding-10 mobile-image-adapt-25" id="first-image" src="media\intro\Expo-Retro intro Harlequin.webp"></img>
+                            <div class="clickable-overlay" id="overlay"><p><i class="fa fa-hand-pointer-o"></i>&nbsp;Click on an image to see it in full screen.</p></div>
+                        </div>                            
+                        <div class="image-caption hor mobile-padding-0">
+                            <span class="orange-title">Harlequin</span><br />
+                            1992, Warp Factory<br/>
+                            Platform: Amiga<br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- NAVIGATION OVERLAY -->
+    <div class="menu-overlay">
+        <button id="right-scroll-button" class="menu-button right-scroll-button"><img src="media\menu\button_fw.png"/></button>
+        <button id="left-scroll-button" class="menu-button left-scroll-button"><img src="./media/menu/button_rew.png"/></button>
+    
+        <button id="navigation-button" class="menu-button navigation-button" onclick="showControls()"><img src="media\menu\audio_button_tv.png"/></button>
+        <div id="audio-controls" class="menu-button audio-controls">
+            <img src="media\menu\audio_button.png">
+            <span class="audio-artist"><p id="audio-artist-text">Artist</p></span>
+            <span id="audio-title-wrapper" class="audio-title-wrapper"><span class="audio-title"><p id="audio-title-text">Title</p></span></span>
+            <button id="audio-button-next"><i class="fa fa-forward"></i></button>
+            <button id="audio-button-mute"><i class="fa fa-pause"></i></button>
+            <button id="audio-button-start"><i class="fa fa-play"></i></button>
+            <audio id="audio"><source id="audio-source" src=""></audio>
+        </div>
+    </div>
+
+    <script src="js/animations.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/scroll-main.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/main-sections.js"></script>
+  <script src="js/0_intro.js"></script>
+  <script>snapToPage();</script>
+</body>

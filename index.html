@@ -1,0 +1,46 @@
+<head> 
+    <meta charset="UTF-8">
+    <title>Rétro-Ludicité</title>
+    <link rel="icon" type="image/x-icon" href="media\menu\favicon.png">
+    
+    <link rel="stylesheet" href="media\font\Comfortaa-Regular.ttf">
+    <link rel="stylesheet" href="media\font\Comfortaa-Bold.ttf" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="stylesheet" href="css/mobile_interface.css">
+    <link href="https://fonts.cdnfonts.com/css/pixel-millennium" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+
+<body>
+<meta name="viewport" content="width=device-width,  initial-scale=0.8, user-scalable=0"/>
+    <div class="scroll-container">
+        <!-- LANGUAGE SELECT -->
+        <div class="page-container">
+            <div class="content-container">
+                <div class="content-container-vert lang-page-container"> 
+                    <div class="lang-title-wrapper">
+                        <img class="lang-title lang-title-fr" id="title-fr" src="media\titles\titre-fr-resize.jpg"/>
+                        <img class="lang-title lang-title-en" id="title-en" src="media\titles\titre-en-resize.jpg"/>
+                    </div>
+                    <div class="lang-select-container">
+                        <!--<div class="content-text lang-select-text">Choisissez une langue / Choose a language</div>-->
+                        <div class="lang-button-menu">
+                            <div class="lang-button-container" id="button-fr"><i  class="fa fa-forward lang-button-arrow"></i><div onclick="toFrench()" class="lang-button">FR</div></div>
+                            <div class="lang-button-container" id="button-en"><i  class="fa fa-forward lang-button-arrow"></i><div onclick="toEnglish()" class="lang-button">EN</div></div>
+                        </div>
+                    </div>
+                    <div class="lang-start-container">
+                        <div class="lang-start-button" id="button-start" onclick="enter()"><div>ENTRER</div></div>
+                    </div>
+                    <div class="rec-browser content-text"><p class="mobile-hidden">F11 - Plein écran / Full screen</p>Navigateurs recommandés / Recommended browsers: Chrome&nbsp;/&nbsp;Firefox</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/home.js"></script>
+
+</body>
+
+

@@ -1,0 +1,593 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Rétro-Ludicité</title>
+    <link rel="icon" type="image/x-icon" href="media\menu\favicon.png">
+    <link rel="stylesheet" href="media\font\Comfortaa-Regular.ttf">
+    <link rel="stylesheet" href="media\font\Comfortaa-Bold.ttf" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="stylesheet" href="css/mobile_interface.css">
+    <link href="https://fonts.cdnfonts.com/css/pixel-millennium" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+</head>
+
+<body>
+<meta name="viewport" content="width=device-width,  initial-scale=0.8, user-scalable=0"/>
+    <div id="page-loader-indicator"></div>
+    <div id="page-loader-background"></div>
+  <div class="scroll-container">
+    <!-- SECTION SELECTION MENU -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13">
+                <p class="content-text mobile-medium-text">
+                    Le jeu vidéo est progressivement devenu le lieu par excellence où la <b style="color:var(--blue-font)">construction des mondes</b> se nourrit de notre passé médiatique. La culture du jeu contemporaine est obsédée par la documentation de ces déambulations anachroniques: les joueuses et les joueurs peuvent désormais se <b style="color:var(--yellow-font)">sauvegarder</b> en téléversant sur YouTube des séances de jeu filmées, ou encore en profitant du mode photo intégré au sein de nombreux jeux populaires. Mieux, de nouvelles consoles de jeu rétro nous permettent non seulement de revisiter nos univers vidéoludiques préférés, mais aussi de <b style="color:var(--red-font)">se rapprocher</b> des aspects matériels disparus avec le temps.</p>
+            </div>
+            <!-- desktop menu -->
+            <div class="content-container-vert content-container-vert-23 mobile-hidden">
+                <div class="menu-row">
+                    <div class="menu-column menu-column-bg" style="padding-right:2vw;">
+                        <img src="media\intro\Picture1.png" style="width:10vw;"/>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='1_sauvegarder.html'"/>
+                            <h1 class="menu-text-1" style="color:var(--yellow-font)">Sauvegarder</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='2_construire.html'"/>
+                            <h1 class="menu-text-2" style="color:var(--blue-font)">Construire des mondes</h1>
+                        </div>
+                        <div class="menu-button-container" style="padding-top:6vh;">
+                            <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogue()"/>
+                            <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                            <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='3_rapprocher.html'"/>
+                            <h1 class="menu-text-3" style="color:var(--red-font)">Se rapprocher</h1>
+                        </div>
+                    </div>
+                    <div class="menu-column menu-column-bg">
+                        <img style="height:50%;" src="media\intro\Picture2.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="content-container-vert content-container-vert-23 dt-hidden">
+                <div class="menu-row">
+                    <div class="menu-column">
+                        <div class="menu-button-container">
+                                <img class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='2_construire.html'"/>
+                                <h1 class="menu-text-2" style="color:var(--blue-font)">Construire des mondes</h1>
+                        </div>
+                        <div class="menu-button-container dt-padding-bottom-10">
+                            <img  class="menu-button-container-img" src="media\menu\tv-01.png" onclick="window.location.href='1_sauvegarder.html'"/>
+                            <h1 class="menu-text-1" style="color:var(--yellow-font)">Sauvegarder</h1>
+                        </div>
+
+                    </div>
+                    <div class="menu-column">
+                        <div class="menu-button-container dt-padding-top-10">
+                            <img class="menu-button-container-img" class="" src="media\menu\tv-01.png" onclick="window.location.href='3_rapprocher.html'"/>
+                            <h1 class="menu-text-3" style="color:var(--red-font)">Se rapprocher</h1>
+                        </div>
+                        <div class="menu-button-container">
+                            <img  class="menu-button-container-img locked" src="media\menu\tv-locked.png" onclick="epilogue()"/>
+                            <h1 class="menu-text-epilogue" style="color:grey">???</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-row" style="justify-content: space-between;">
+                   <img src="media\intro\Picture1.png" style="width:20%"/>
+                    <img style="width:30%;" src="media\intro\Picture2.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SUPER MARIO WORLD 9 -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-23 dt-height-90">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor mobile-hidden"></div>
+                    <iframe class="emulator mobile-hidden" src="https://archive.org/embed/4-in-1-bd-414-unl" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                    <img class="contained-image dt-hidden mobile-image-adapt-25" src="media\1_sauvegarder\screenshot_smw9.webp"></img>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Super Mario World 9</span><br />
+                        Plateforme: Famicom (émulation)<br />
+                        Source : Internet Archive<br />
+
+                        <br/>
+                            <span class="mobile-hidden">
+                                <b>Contrôles</b><br/>
+                                1: Start<br/>
+                                Alt: Sauter<br/>
+                                Ctrl: Attaquer<br/>
+                                Flèches: Déplacement<br/>
+                            </span>
+                            <span class="dt-hidden mobile-emulator-notice"><i class="fa fa-gamepad"></i> Accédez à l'exposition sur votre ordinateur de bureau pour jouer.</span>
+                    </div>
+                </div>  
+            </div>
+            <div class="">
+                <p class="content-text mobile-text-padding">
+                    Ces versions modifiées et autres éditions anniversaires contribuent ainsi à la préservation de la mémoire vidéoludique, mais aussi à brouiller les pistes pour les historien-nes, qui pourraient confondre les différentes versions. Avez-vous déjà oublié <i>Super Mario World 9</i>? 
+                </p>
+            </div>           
+        </div>
+    </div>
+
+    <!-- GAME & WATCH -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-23">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <img class="contained-image fs-image" src="media\1_sauvegarder\Gamewatch.webp"/>
+                    <div class="image-caption hor">
+                        Au centre:<br/>
+                        <span class="yellow-title">Fire</span>, jeu électronique portable de la série Game & Watch<br/>
+                        1980, Nintendo<br />
+                        <br/>
+                        À gauche et à droite:<br/>
+                        Versions du même jeu adapté au goût du jour dans <span class="yellow-title">Game & Watch Gallery</span>, Nintendo, 1997<br/>
+                        Plateforme: Game Boy Color
+                    </div>
+                </div>
+            </div>
+            <div class="content-container-vert content-container-vert-13">
+                <p class="content-text mobile-text-padding">Difficile pour un public, même averti, de déterminer l’authenticité de ces hommages. Les remakes de la série Game & Watch parus au courant des années 1990 intègrent des personnages devenus célèbres dans l’intervalle, comme Mario et Yoshi. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WARP ZONE 2 -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13 mobile-order-2" style="height:15%">
+                <p class="content-text">
+                    Outre l’émulation, la communauté s’efforce de mettre en boîte sa nostalgie de bien d’autres manières encore. 
+                </p>
+            </div>
+            <div class="content-container-vert content-container-vert-23 mobile-order-1" style="height:85%">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <img class="contained-image dt-width-35 fs-image" src="media\1_sauvegarder\Retro dioramas.webp"/>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">LucasArts Games Cubic Diorama</span><br />
+                        2020, Arts-MD<br />
+                        Diorama<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- ÉMULATION -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                <p class="content-text">
+                    Les fans investissent énormément de temps pour créer des émulateurs de plateformes oubliées, ou encore des filtres qui simulent à la fois une résolution plus « HD » et des effets visuels de téléviseurs cathodiques. Des fragments de cette expertise sont parfois récupérés par les propriétaires de franchises lucratives afin de réaliser une nouvelle édition anniversaire.
+                </p>
+            </div>
+            <div class="content-container-vert content-container-vert-23 mobile-order-1" style="height:75%">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <img class="contained-image dt-mw-50 fs-image" src="media\1_sauvegarder\Figure 14.webp"/>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Flashback 25th Anniversary Edition</span><br />
+                        2018, Microids<br />
+                        Plateforme: PlayStation 4<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO COIN OPS-->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="video-container">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <video class="contained-video mobile-image-adapt" id="vid6" controls webkit-playsinline playsinline>
+                        <source src="media\1_sauvegarder\Coin ops.mp4" />
+                    </video>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">CoinOPS Arcade Gold+</span><br />
+                            2021, CoinOPS<br />
+                            Émulateur<br />
+                            Plateforme : Windows<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO HALO / HEIANKYO ALIEN-->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="video-container">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <video class="contained-video mobile-image-adapt" id="vid5" controls webkit-playsinline playsinline>
+                        <source src="media\1_sauvegarder\Heiankyo Alien, Halo anniversary.mp4"/>
+                    </video>
+                    <div class="double-caption">
+                        <div class="image-caption">
+                            <span class="yellow-title">Heiankyo Alien</span><br />
+                            1990, Live Planning<br />
+                            Plateforme : Game Boy<br />
+                        </div>
+                        <div class="image-caption">
+                            <span class="yellow-title">Halo: Combat Evolved - Anniversary</span><br />
+                            2020, Bungie Studios<br />
+                            Plateforme : Windows
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- GAMEBOY CARTRIDGE (FULL) -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert">
+                <div class="image-caption-container hor dt-mw-70">
+                    <div class="image-caption hor mobile-hidden"></div>
+                    <img class="contained-image fs-image dt-mw-55" src="media\1_sauvegarder\ExpoRetro-9b.webp"/>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Arcade Classics: Battlezone/Super Breakout </span><br/>           
+                            1996, Atari<br/>                               
+                            Plateforme : Game Boy<br/> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GAMEBOY CARTRIDGES -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-23" >
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <img class="contained-image fs-image" src="media\1_sauvegarder\ExpoRetro-8b.webp" />
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Arcade Classics No.1: Asteroids&nbsp;/ Missile Command </span><br />
+                        1995, Atari <br />
+                        Plateforme : Game Boy <br />
+                        Collection du LUDOV<br />
+                    </div>
+                </div>
+            </div>
+            <div class="content-container-vert content-container-vert-13" style="height:15%">
+                <p class="content-text mobile-text-padding">
+                    Alors que certains titres s'amusent à préserver des technologies obsolètes, l'industrie du jeu vidéo se préoccupe surtout de rentabiliser les grands succès antérieurs.
+                </p>
+            </div>
+        </div>
+    </div>  
+
+    <!-- EMUL GEKISHA BOY -->
+    <div class="page-container content">
+        <div class="content-container">
+                <div class="video-container">
+                    <div class="image-caption-container hor">
+                        <div class="image-caption hor mobile-hidden"></div>
+                        <iframe class="emulator mobile-hidden" src="https://archive.org/embed/Gekisha_Boy_J_TEng" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                        <img class="contained-image dt-hidden" src="media\1_sauvegarder\screenshot_gekisha_boy.png"></img>
+                        <div class="image-caption hor">
+                            <span class="yellow-title">Gekisha Boy</span> <br />
+                            1992, Irem<br />
+                            Plateforme: PC Engine (émulation)<br />
+                            Source : Internet Archive<br />
+
+                            <br/>
+                            <span class="mobile-hidden">
+                                <b>Contrôles</b><br/>
+                                1: Start<br/>
+                                Alt: Sauter<br/>
+                                Ctrl: Prendre photo<br/>
+                                Flèches: Déplacement<br/>
+                            </span>
+                            <span class="dt-hidden mobile-emulator-notice"><i class="fa fa-gamepad"></i> Accédez à l'exposition sur votre ordinateur de bureau pour jouer.</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- VIDEO RED DEAD -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13" style="height:10%;">
+                <p class="content-text">
+                    À travers ce détournement contemplatif, le jeu contemporain devient plus que jamais un lieu de tourisme virtuel.
+                </p>
+            </div>
+            <div class="content-container-vert content-container-vert-23 dt-reddead-toptext" >
+                <div class="video-container">
+                    <div class="image-caption-container hor" >
+                        <div class="image-caption hor"></div>
+                        <video class="contained-video dt-width-45" id="vid4" controls webkit-playsinline playsinline>
+                            <source src="media\1_sauvegarder\red-dead.mp4" type="video/mp4"/>
+                        </video>
+                        <div class="image-caption hor">
+                            <span class="yellow-title">Red Dead Redemption II</span><br />
+                            2018, Rockstar Games<br />
+                            Plateforme : Windows<br />
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="content-container-vert content-container-vert-13" style="height:10%;padding-top:3vh;">
+                <p class="content-text">
+                    Le mode photo de <i>Red Dead Redemption II</i> simule un très grand nombre de procédés obsolètes. Avez-vous déjà essayé la photographie au collodion humide? 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEATH STRANDING (FULL) -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="video-container" style="max-width:100%; justify-content: center;align-items: center;">
+                <img class="contained-image fs-image mobile-ds-image" style="max-height:100%; max-width:100%; height:100%; width:100%;" src="media\1_sauvegarder\Death Stranding mode photo 2.webp"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHOTO MODE -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-12">
+                <div class="content-container-hor content-container-hor-23 dt-width-60">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <img class="contained-image dt-mw-50 mobile-image-adapt-smaller fs-image" src="media\1_sauvegarder\God of war mode photo.webp" />
+                            <div class="image-caption hor mobile-small-text">
+                                <span class="yellow-title">God of War 3 Remastered</span><br />
+                                2015, Sony Interactive Entertainment <br />
+                                Plateforme : PlayStation 4 <br />
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="content-container-hor content-container-hor-13">
+                    <p class="content-text">
+                        Retournement inattendu, quelques années plus tard : un grand nombre de jeux populaires intègrent désormais un mode photo, alors que la plupart n’ont absolument rien à voir avec l’univers de la photographie. 
+                    </p>
+                </div>
+            </div>
+            <div class="content-container-vert content-container-vert-12">
+                <div class="content-container-hor content-container-hor-13 dt-width-40 mobile-order-2">
+                    <p class="content-text">
+                        Toujours possible, dans la mythique série <i>God of War</i> ou dans l’oeuvre postapocalyptique <i>Death Stranding</i>, de prendre une pause photo afin de sauver le monde, façon Instagram.
+                    </p>
+                </div>
+                <div class="content-container-hor content-container-hor-23 dt-width-60 mobile-order-1">
+                    <div class="video-container">
+                        <div class="image-caption-container hor">
+                            <img class="contained-image dt-mw-50 mobile-image-adapt-smaller fs-image" src="media\1_sauvegarder\Death Stranding mode photo b.webp" />
+                            <div class="image-caption hor mobile-small-text">
+                                <span class="yellow-title">Death Stranding</span><br />
+                                2019, Kojima Productions, Guerrilla Games <br />
+                                Plateforme : PlayStation 4 <br />
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHENMUE -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                <p class="content-text mobile-text-padding">Pour l’adaptation de <i>Shenmue II</i> sur Xbox, suivant la fin de l’opération Dreamcast, les concepteurs d’AM2 intègrent un bonus: un mode photo, qui comprend déjà un album et certains filtres. À l’époque, cet ajout ne fait pas tourner les têtes. 
+                </p>
+            </div>
+            <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                <div class="content-container-hor">
+                    <img class="full-image fs-image" src="media\1_sauvegarder\shenmue 2 photo mode.webp" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO LIFE IS STRANGE -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="video-container">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <video class="contained-video" id="vid3" controls webkit-playsinline playsinline>
+                        <source src="media\1_sauvegarder\life-is-strange_shenmue.mp4" type="video/mp4" />
+                    </video>
+                    <div style="display:flex; flex-direction:column; padding-left:2vw;">
+                        <div class="image-caption">
+                            <span class="yellow-title">Life is Strange</span><br />
+                            2015, DON'T NOD Entertainment<br />
+                            Plateforme : PlayStation 3
+                        </div>
+                        <div class="image-caption">
+                            <span class="yellow-title">Shenmue II</span><br />
+                            2001 , SEGA-AM2<br />
+                            Plateforme : Dreamcast et Xbox <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAX POLAROID -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert">
+                <div class="content-container-hor content-container-hor-23">
+                    <img class="full-image mobile-image-adapt-portrait-half fs-image" src="media\1_sauvegarder\ExpoRetro Life is Strange.webp"/>
+                </div>
+                <div class="content-container-hor content-container-hor-13">
+                    <p class="content-text mobile-text-padding">Dans <i>Life is Strange</i>, l’étudiante en photographie Maxine Caulfield apprend à jongler avec le temps afin de sauver la petite communauté d’Arcadia Bay. La protagoniste et par extension le joueur documentent leur parcours à l’aide d’une caméra Polaroid vintage. Ces clichés deviennent des objets de mémoire toujours  accessibles via le journal de l’adolescente.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- VIDEO FATAL FRAME -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="video-container">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <video class="contained-video" id="vid2" controls webkit-playsinline playsinline>
+                        <source src="media\1_sauvegarder\fatal-frame.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Fatal Frame II: Crimson Butterfly</span><br />
+                        2003, Tecmo<br />
+                        Plateforme : PlayStation 2 <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FATAL FRAME APPAREIL PHOTO -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                <p class="content-text mobile-text-padding">
+                    Afin d’apaiser les âmes tourmentées dans la célèbre franchise <i>Fatal Frame</i>, les joueur-euses doivent apprendre à maîtriser l’art du cadrage et du timing avec une relique médiatique : la « camera obscura ». La photographie devient ici un outil essentiel pour se préserver.
+                </p>
+            </div>
+            <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <img class="contained-image dt-width-40 fs-image" src="media\1_sauvegarder\ExpoRetro Fatal Frame.webp"/>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Fatal Frame: Maiden of Black Water</span><br />
+                        2014, Koei Tecmo<br/>
+                        Plateforme: Nintendo Wii U<br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DISQUETTE -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert">
+                <div class="content-container-hor content-container-hor-13">
+                    <p class="content-text mobile-text-padding-bottom">
+                        D’anciens supports vidéoludiques occupent souvent la même fonction. Véritable icône de la sauvegarde dans les suites bureautiques comme Office 365, la disquette 3,5 pouces n’est plus utilisée pour distribuer des logiciels depuis plus de vingt ans. 
+                    </p>
+                </div>
+                <div class="content-container-hor content-container-hor-23 mobile-hor">
+                    <img class="full-image" style="width:50%" src="media\1_sauvegarder\disquette.png" />
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- VIDEO RESIDENT EVIL / ALIEN ISOLATION -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="video-container">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <video class="contained-video" id="vid1" style="max-height:100%" controls webkit-playsinline playsinline>
+                        <source src="media\1_sauvegarder\resident-evil.mp4" type="video/mp4" />   
+                    </video>
+                    <div class="double-caption">
+                        <div class="image-caption">
+                            <span class="yellow-title">Resident Evil 7: Biohazard</span><br />
+                            2017, Capcom<br />
+                            Plateforme : PlayStation 4
+                        </div>
+                        <div class="image-caption">
+                            <span class="yellow-title">Alien: Isolation</span><br />
+                            2014, The Creative Assembly<br />
+                            Plateforme : PlayStation 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MACHINE À ÉCRIRE -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert content-container-vert-13 mobile-order-2">
+                <p class="content-text mobile-text-padding">
+                    C’est devenu un cliché : pour enregistrer l’évolution de sa partie, la joueuse doit trouver dans l’univers du jeu un appareil technologique obsolète comme un magnétoscope ou une machine à écrire. 
+                </p>
+            </div>
+            <div class="content-container-vert content-container-vert-23 mobile-order-1">
+                <div class="image-caption-container hor">
+                    <div class="image-caption hor"></div>
+                    <img class="contained-image dt-width-25 fs-image mobile-image-adapt" src="media\1_sauvegarder\ExpoRetro-2b.webp"/>
+                    <div class="image-caption hor">
+                        <span class="yellow-title">Royal Magic Margin</span><br />
+                        1942?, Royal Typewriter Company<br/>
+                        Collection privée de Bernard Perron<br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TITRE -->
+    <div class="page-container content">
+        <div class="content-container">
+            <div class="content-container-vert mobile-title-container">
+                <img class="title-image" src="media\1_sauvegarder\titre_sauvegarder.jpg" />
+            </div>
+        </div>
+    </div>
+
+</div>
+  
+      <!-- NAVIGATION OVERLAY -->
+    <div class="menu-overlay">
+        <button id="right-scroll-button" class="menu-button right-scroll-button"><img src="media\menu\button_fw.png"/></button>
+        <button id="left-scroll-button" class="menu-button left-scroll-button"><img src="./media/menu/button_rew.png"/></button>
+    
+        <button id="navigation-button" class="menu-button navigation-button" onclick="showControls()"><img src="media\menu\audio_button_tv.png"/></button>
+        <div id="audio-controls" class="menu-button audio-controls">
+            <img src="media\menu\audio_button.png">
+            <span class="audio-artist"><p id="audio-artist-text">Artist</p></span>
+            <span id="audio-title-wrapper" class="audio-title-wrapper"><span class="audio-title"><p id="audio-title-text">Title</p></span></span>
+            <button id="audio-button-next"><i class="fa fa-forward"></i></button>
+            <button id="audio-button-mute"><i class="fa fa-pause"></i></button>
+            <button id="audio-button-start"><i class="fa fa-play"></i></button>
+            <audio id="audio"><source id="audio-source" src=""></audio>
+        </div>
+    </div>
+
+    <script src="js/animations.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/scroll-main.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/main-sections.js"></script>
+  <script src="js/1_sauvegarder.js"></script>
+  <script>snapToPage();</script>
+</body>
