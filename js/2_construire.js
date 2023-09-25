@@ -1,7 +1,7 @@
 var tracks = [
     {"name":"FIRST FOOD SHOP", "artist":"Polaria Poyon", "path":"media/audio/Polaria Poyon - FIRST FOOD SHOP.mp3"},
     {"name":"Bug Splat", "artist":"XyNo", "path":"media/audio/XyNo - Hexagon Chainbreak - 02 - Bug Splat.mp3"},
-    {"name":"Saúde! Opa Opa!", "artist":"Polaria Poyon", "path":"media/audio/Polaria Poyon - Saúde! Opa Opa!.mp3"},
+    {"name":"Saúde! Opa Opa!", "artist":"Polaria Poyon", "path":"media/audio/Polaria Poyon - Saude! Opa Opa!.mp3"},
     {"name":"KORE2012", "artist":"XyNo", "path":"media/audio/XyNo - Hexagon Chainbreak - 03 - KORE2012.mp3"},
   ]
   setTracks(tracks);
